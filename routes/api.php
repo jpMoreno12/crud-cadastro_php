@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::post('/create', [UserController::class, 'store']);
+Route::get('/getAll', [UserController::class, 'index']);
